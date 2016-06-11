@@ -6,7 +6,7 @@ composer.lock
 # Created by https://www.gitignore.io
 
 ### NetBeans ###
-nbproject/private/
+nbproject/
 build/
 nbbuild/
 dist/
