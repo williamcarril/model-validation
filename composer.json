@@ -1,0 +1,23 @@
+{
+    "name": "williamcarril/model-validation",
+    "description": "Eloquent model validation for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "williamcarril",
+            "email": "williamcarril@terra.com.br"
+        }
+    ],
+    "require": {
+        "laravel/laravel": "~5.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "WGPC\\Eloquent": "src/"
+        },
+        "psr-4": {
+            "WGPC\\Eloquent": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
