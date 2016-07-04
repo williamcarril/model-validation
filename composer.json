@@ -2,7 +2,6 @@
     "name": "williamcarril/model-validation",
     "description": "Eloquent model validation for Laravel",
     "license": "MIT",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "williamcarril",
@@ -10,7 +9,7 @@
         }
     ],
     "require": {
-        "laravel/laravel": "~5"
+        "laravel/laravel": "~5.2"
     },
     "autoload": {
         "psr-0": {
