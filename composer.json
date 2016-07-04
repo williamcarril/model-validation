@@ -13,10 +13,10 @@
     },
     "autoload": {
         "psr-0": {
-            "WGPC\\Eloquent": "src/"
+            "WGPC\\Eloquent\\": "src/"
         },
         "psr-4": {
-            "WGPC\\Eloquent": "src/"
+            "WGPC\\Eloquent\\": "src/"
         }
     },
     "minimum-stability": "stable"
