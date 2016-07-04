@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "laravel/laravel": "~5.2"
+        "laravel/laravel": "dev-master"
     },
     "autoload": {
         "psr-0": {
