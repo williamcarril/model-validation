@@ -98,6 +98,14 @@ class Model extends \Illuminate\Database\Eloquent\Model {
     }
 
     /**
+     * Puts more errors in its message bag.
+     * @return boolean
+     */
+    public function putErrors(array $errors) {
+        $this->errors->merge($errors);
+    }
+
+    /**
      * Verify if there's an error at saving.
      * @return boolean
      */
