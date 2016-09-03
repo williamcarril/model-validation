@@ -110,7 +110,7 @@ class Model extends \Illuminate\Database\Eloquent\Model {
      * @return boolean
      */
     public function hasErrors() {
-        return !empty($this->errors);
+        return !$this->errors->isEmpty();
     }
 
     /**
