@@ -101,7 +101,10 @@ class Model extends \Illuminate\Database\Eloquent\Model {
      * Puts more errors in its message bag.
      * @return boolean
      */
-    public function putErrors(array $errors) {
+    public function putErrors($errors) {
+        if (!is_array($errors)) {
+            $errors = [$errors];
+        }
         $this->errors->merge($errors);
     }
 
