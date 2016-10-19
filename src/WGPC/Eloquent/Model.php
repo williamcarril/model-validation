@@ -3,6 +3,7 @@
 namespace WGPC\Eloquent;
 
 use Illuminate\Support\MessageBag;
+use Illuminate\Contracts\Support\MessageProvider;
 
 class Model extends \Illuminate\Database\Eloquent\Model {
 
@@ -102,7 +103,7 @@ class Model extends \Illuminate\Database\Eloquent\Model {
      * @return boolean
      */
     public function putErrors($errors) {
-        if (!is_array($errors)) {
+        if (!is_array($errors) && !($errors instanceof MessageProvider)) {
             $errors = [$errors];
         }
         $this->errors->merge($errors);
